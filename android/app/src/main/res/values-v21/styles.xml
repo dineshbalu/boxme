@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <!-- specify enter and exit transitions -->
+        <!-- options are: explode, slide, fade -->
+        <item name="android:windowEnterTransition">@transition/login_transition</item>
+        <item name="android:windowExitTransition">@transition/login_transition</item>
+
+        <!-- specify shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/login_transition</item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/login_transition</item>
+
+    </style>
+</resources>
