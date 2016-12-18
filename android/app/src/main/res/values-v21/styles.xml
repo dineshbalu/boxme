@@ -13,9 +13,11 @@
 
         <!-- specify shared element transitions -->
         <item name="android:windowSharedElementEnterTransition">
-            @transition/login_transition</item>
+            @transition/login_transition
+        </item>
         <item name="android:windowSharedElementExitTransition">
-            @transition/login_transition</item>
+            @transition/login_transition
+        </item>
 
     </style>
 </resources>

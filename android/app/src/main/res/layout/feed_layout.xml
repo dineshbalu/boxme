@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         card_view:cardUseCompatPadding="true"
-        card_view:cardElevation="1dp"
+        card_view:cardElevation="2dp"
         card_view:cardCornerRadius="2dp">
 
         <RelativeLayout
@@ -37,7 +37,7 @@
                 android:padding="5dp"
                 android:layout_toRightOf="@+id/thumbView"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/primary_text_light"
                 android:text="Name"/>
 
             <TextView
@@ -64,12 +64,13 @@
                 android:id="@+id/contentView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
                 android:padding="5dp"
                 android:layout_below="@+id/topMarginView"
                 android:gravity="center_vertical"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/secondary_text_light"
                 android:text="You have created a new repository"/>
 
             <View
@@ -79,13 +80,15 @@
                 android:layout_below="@+id/contentView"
                 android:background="@android:color/darker_gray"/>
 
-            <TextView
+            <Button
                 android:id="@+id/repoView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
                 android:layout_below="@+id/bottomMarginView"
                 android:gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/ic_chevron_right_black_24dp"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@android:color/holo_blue_bright"
                 android:text="username/reponame"/>

@@ -89,6 +89,7 @@ public class LoginActivity extends AppCompatActivity{
         });
 
         mProgressView = findViewById(R.id.login_progress);
+        mProgressView.setVisibility(View.GONE);
         mContentPanel = findViewById(R.id.contentPanel);
     }
 
@@ -174,6 +175,11 @@ public class LoginActivity extends AppCompatActivity{
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR2)
     private void showProgress(final boolean show) {
+
+        if( show )
+            mProgressView.setVisibility(View.VISIBLE);
+        else
+            mProgressView.setVisibility(View.GONE);
 
     }
 

@@ -12,15 +12,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="android.db.boxme.LoginActivity">
 
-    <!-- Login progress -->
-    <ProgressBar
-        android:id="@+id/login_progress"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone" />
-
         <LinearLayout
             android:id="@+id/contentPanel"
             android:transitionName="content"
@@ -31,11 +22,28 @@
             android:padding="@dimen/activity_horizontal_margin"
             android:orientation="vertical">
 
-            <ImageView
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:padding="@dimen/activity_horizontal_margin"
-                android:src="@drawable/mark_github"/>
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/mark_github"/>
+
+                <ProgressBar
+                    android:id="@+id/login_progress"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@color/colorPrimaryDark"
+                    android:background="@android:color/transparent"/>
+
+            </FrameLayout>
+
+
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
